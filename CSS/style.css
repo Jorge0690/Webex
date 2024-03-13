@@ -2,21 +2,33 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: black;
+    background: url(../img/diseño-web-webex6.png) ;
 }
 
 .section-padding{
     padding: 50px 0;
 }
+.navbar-nav a{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-brand:focus, .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color : #0CAEF2;
+    cursor: pointer;
+}
+.w-100{
+    height: 100vh;
+}
 .carousel-item{
     text-align: center;
-    height: 58vh;
+    height: 90vh;
     min-height: 300px;
 }
 
 .carousel-caption{
     z-index: 2;
-    bottom: 100px;
+    bottom: 200px;
     margin-top: 100px;
 }
 
@@ -46,10 +58,13 @@ font-size: 45;
     background: rgba(0,30,82,0.327);
     z-index: 1;
 }
+.contact{
+    background: url("../img/diseño-web-webex5.png");
+}
 form{
-background: rgba(255,255,255,0.6);
+background: rgba(255,255,255,0.2);
 padding: 3em;
-height: 320px;
+height: 380px;
 border-radius: 20px;
 border-left: 1px solid rgba(255,255,255,0.3);
 border-top: 1px solid -rgba(255,255,255,0.3);
@@ -83,9 +98,9 @@ form :active{
 }
 form input{
     background: transparent;
-    width: 200px;
-    padding: 0.6rem;
-    margin-bottom: 0.2rem;
+    width: 400px;
+    padding: 0.9rem;
+    margin-bottom: 0.6rem;
     border: none;
     border-left: 1px solid rgba(255,255,255,0.3);
     border-top: 1px solid rgba(255,255,255,0.3);
@@ -102,10 +117,56 @@ form input{
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     border-radius: 5000px;
 }
+form input:hover{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+form input[type="email"]:focus,
+form input[type="password"]:focus{
+    background: rgba(255,255,255,0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+}
+form input[type="button"]{
+    width: 150px;
+    font-size: 1rem;
+}
 
+form input[type="button"]:hover{
+    cursor: pointer;
+}
+form:hover{
+    margin: 4px;
+}
+a,
+input:focus,
+button:focus,
+select:focus{
+    outline: none;
+}
+.drops{
+    background: rgba(255,255,255,0.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    border-top: 1px solid -rgba(255,255,255,0.3);
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
 
-
-
+@media (min-width: 768px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-item{
+        height: 70vh;
+    }
+    .w-100{
+        height: 70vh;
+    }
+}
 
 
 
